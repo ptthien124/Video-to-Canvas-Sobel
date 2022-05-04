@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=yes"
+    />
+    <title>Sobel Filter</title>
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      height: 80vh;
+    "
+  >
+    <h1>Sobel Filter</h1>
+
+    <div
+      style="display: flex; align-items: center; justify-content: space-evenly; width: 100%;"
+    >
+      <video controls loop id="video" width="500px" height="281px">
+        <source src="./resource/video.mp4" type="video/mp4" />
+        <source src="./resource/video.mp4" type="video/ogg" />
+      </video>
+      <canvas
+        id="canvas-sobel"
+        width="500px"
+        height="281px"
+        style="background-color: black"
+      ></canvas>
+    </div>
+
+    <script src="./resource/sobel.js"></script>
+    <script src="./resource/main.js"></script>
+  </body>
+</html>
